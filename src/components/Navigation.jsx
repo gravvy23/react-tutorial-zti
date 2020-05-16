@@ -13,6 +13,9 @@ export const Navigation = () => (
       <li className="nav-item">
         <Link className="nav-link" to="/state-hook">#2</Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/setcount-callback">#3</Link>
+      </li>
     </ul>
   </nav>
 );
