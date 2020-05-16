@@ -8,8 +8,8 @@ export const FunctionalWithEffect = () => {
   }, [count]);
 
   return (
-    <div class="container">
-      <p>Counter: {count}</p>
+    <div className="container">
+      <p className="m-3">Counter: {count}</p>
       <button
         type="button"
         className="btn btn-dark m-3"
