@@ -1,21 +1,14 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink } from './NavLink';
 
 export const Navigation = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
      <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
-        <Link className="nav-link" to="/">Home</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/broken-functional-component">#1</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/state-hook">#2</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" to="/setcount-callback">#3</Link>
-      </li>
+        <NavLink path="/" text="Home" />
+        <NavLink path="/broken-functional-component" text="#1" />
+        <NavLink path="/state-hook" text="#2" />
+        <NavLink path="/setcount-callback" text="#3" />
+        <NavLink path="/use-effect" text="#4" />
     </ul>
   </nav>
 );
