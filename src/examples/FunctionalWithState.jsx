@@ -4,8 +4,8 @@ export const FunctionalWithState = () => {
   let count = 0;
 
   return (
-    <div class="container">
-      Counter: {count}
+    <div className="container">
+      <p className="m-3">Counter: {count}</p>
       <div>
         <button
           type="button"

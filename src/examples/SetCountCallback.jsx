@@ -6,8 +6,8 @@ export const SetCountCallback = () => {
   const [count, setCount] = React.useState(getInitialCounterValue);
 
   return (
-    <div class="container">
-      Counter: {count}
+    <div className="container">
+      <p className="m-3">Counter: {count}</p>
       <div>
         <button
           type="button"
