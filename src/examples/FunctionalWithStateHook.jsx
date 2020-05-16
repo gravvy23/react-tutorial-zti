@@ -1,7 +1,7 @@
 import React from "react";
 
-export const FunctionalWithState = () => {
-  let count = 0;
+export const FunctionalWithStateHook = () => {
+  const [count, setCount] = React.useState(0);
 
   return (
     <div class="container">
@@ -10,14 +10,14 @@ export const FunctionalWithState = () => {
         <button
           type="button"
           className="btn btn-primary m-3"
-          onClick={() => {count++;}}
+          onClick={() => setCount(count + 1)}
         >
           Increase
         </button>
         <button
           type="button"
           className="btn btn-primary m-3"
-          onClick={() => {count--;}}
+          onClick={() => setCount(count - 1)}
         >
           Decrease
         </button>
