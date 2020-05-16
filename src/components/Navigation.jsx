@@ -10,6 +10,9 @@ export const Navigation = () => (
       <li className="nav-item">
         <Link className="nav-link" to="/broken-functional-component">#1</Link>
       </li>
+      <li className="nav-item">
+        <Link className="nav-link" to="/state-hook">#2</Link>
+      </li>
     </ul>
   </nav>
 );
